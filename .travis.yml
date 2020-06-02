@@ -5,7 +5,7 @@ rvm:
 - 2.5.0
 
 node_js:
-- "10"
+- "14"
 
 install:
 - gem uninstall bundler
@@ -35,4 +35,5 @@ script:
 - bundle exec rubocop
 - node_modules/karma/bin/karma start karma.conf.js --single-run
 # - node_modules/.bin/eslint **/*.js
+- node -v
 - npm run lint
