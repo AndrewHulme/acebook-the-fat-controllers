@@ -9,4 +9,6 @@ install:
 - bundle install
 - bundle exec rake db:create RAILS_ENV=test
 - rake db:migrate
-script: rake
+script: 
+- rake
+- bundle exec npm test
