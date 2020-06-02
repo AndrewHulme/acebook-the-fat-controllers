@@ -11,4 +11,4 @@ install:
 - rake db:migrate
 script: 
 - rake
-- bundle exec npx karma start karma.conf.js --single-run
+
