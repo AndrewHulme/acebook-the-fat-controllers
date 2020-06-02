@@ -3,6 +3,8 @@ services:
 - postgresql
 rvm:
 - 2.5.0
+before_script:
+  - npm install karma
 install:
 - gem uninstall bundler
 - gem install bundler --version '1.7.4'
@@ -11,3 +13,4 @@ install:
 - rake db:migrate
 script: 
 - rake
+- karma start karma.conf.js --single-run
