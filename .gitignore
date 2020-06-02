@@ -15,7 +15,8 @@
 /db/*.sqlite3-journal
 
 # testing
-/coverage/**
+/coverage/*
+coverage/.resultset.json
 
 # Ignore all logfiles and tempfiles.
 /log/*
