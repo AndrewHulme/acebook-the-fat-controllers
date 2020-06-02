@@ -17,14 +17,37 @@ See [CONTRIBUTING.md](CONTRIBUTING.md)
 First, clone this repository. Then:
 
 ```bash
-> bundle install
-> bin/rails db:create
-> bin/rails db:migrate
+$ bundle install
+$ npm install
+$ bin/rails db:create
+$ bin/rails db:migrate
 
-> bundle exec rspec # Run the tests to ensure it works
-> bin/rails server # Start the server at localhost:3000
+$ bundle exec rspec # Run the tests to ensure it works
+$ bin/rails server # Start the server at localhost:3000
 ```
 
-## Trello 
+*Note*  
+
+Run `bundle update` to solve following issue:
+```
+Bundler could not find compatible versions for gem "unicode-display_width"
+```
+
+## Testing
+
+To run RSpec (with Capybara), Rubocop, Jasmine in Karma and ESLint run script:  
+```bash
+$ ./test/tdd.test`
+```
+
+To test in browser (uses Chrome), run script:  
+```bash
+$ ./test/web.test
+```
+
+This will load `localhost:3000` into the browser, then starts Rails. Refresh page once Rails is up and running.
+
+
+## Trello
 
 https://trello.com/b/Trq2bnqd/acebook-rails-the-fat-controllers
