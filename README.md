@@ -35,7 +35,7 @@ Bundler could not find compatible versions for gem "unicode-display_width"
 
 ## Testing
 
-To run RSpec, Rubocop, Jasmine in Karma and ESLint run script:  
+To run RSpec (with Capybara), Rubocop, Jasmine in Karma and ESLint run script:  
 ```bash
 $ ./test/tdd.test`
 ```
