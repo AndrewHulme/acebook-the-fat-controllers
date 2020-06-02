@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/AndrewHulme/acebook-the-fat-controllers.svg?branch=master)](https://travis-ci.com/github/AndrewHulme/acebook-the-fat-controllers)
+
 # AceBook
 
 REQUIRED INSTRUCTIONS:
