@@ -16,7 +16,7 @@
 
 # testing
 /coverage/*
-coverage/.resultset.json
+/coverage/.resultset.json
 
 # Ignore all logfiles and tempfiles.
 /log/*
