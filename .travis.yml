@@ -12,3 +12,7 @@ install:
 script: 
 - rake
 
+language: node_js
+script: karma start karma.conf.js --single-run
+node_js:
+- "node"
