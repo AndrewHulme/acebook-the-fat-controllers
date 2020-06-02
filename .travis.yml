@@ -31,4 +31,5 @@ script:
 - rake
 - bundle exec rubocop
 - node_modules/karma/bin/karma start karma.conf.js --single-run
-- node_modules/.bin/eslint **/*.js
+# - node_modules/.bin/eslint **/*.js
+- npm run lint

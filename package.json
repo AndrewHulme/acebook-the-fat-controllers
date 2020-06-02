@@ -10,6 +10,7 @@
     "test": "test"
   },
   "scripts": {
+    "lint": "./node_modules/.bin/eslint **/*.js",
     "test": "karma start karma.conf.js --single-run"
   },
   "devDependencies": {
