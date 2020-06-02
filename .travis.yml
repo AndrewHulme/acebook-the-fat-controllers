@@ -4,7 +4,20 @@ services:
 rvm:
 - 2.5.0
 before_script:
+  - npm install eslint
+  - npm install @metahub/karma-jasmine-jquery
+  - npm install babel-eslint
+  - npm install eslint-plugin-jasmine
+  - npm install jasmine
+  - npm install jasmine-core
+  - npm install jasmine-jquery
   - npm install karma
+  - npm install karma-chrome-launcher
+  - npm install karma-cli
+  - npm install karma-jasmine
+  - npm install karma-coverage
+  - npm install karma-spec-reporter
+  - npm install karma-jquery
 install:
 - gem uninstall bundler
 - gem install bundler --version '1.7.4'
