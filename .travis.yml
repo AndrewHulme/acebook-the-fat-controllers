@@ -3,6 +3,14 @@ services:
 - postgresql
 rvm:
 - 2.5.0
+
+install:
+- gem uninstall bundler
+- gem install bundler --version '1.7.4'
+- bundle install
+- bundle exec rake db:create RAILS_ENV=test
+- rake db:migrate
+
 before_script:
 - npm install eslint
 - npm install @metahub/karma-jasmine-jquery
@@ -18,13 +26,9 @@ before_script:
 - npm install karma-coverage
 - npm install karma-spec-reporter
 - npm install karma-jquery
-install:
-- gem uninstall bundler
-- gem install bundler --version '1.7.4'
-- bundle install
-- bundle exec rake db:create RAILS_ENV=test
-- rake db:migrate
+
 script: 
 - rake
+- bundle exec rubocop
 - node_modules/karma/bin/karma start karma.conf.js --single-run
-- node_modules/eslint/bin/eslint.js . --ext .js
+# - node_modules/eslint/bin/eslint.js . --ext .js
