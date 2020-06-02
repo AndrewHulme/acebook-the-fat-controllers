@@ -33,9 +33,9 @@ CMD=rubocop $SPEC_FILE $LIB_FILE
 echo -e "$HOSTNAME\$ $CMD\n"
 $CMD
 
-# CMD="npx karma start karma.conf.js --single-run"
-# echo -e "$HOSTNAME\$ $CMD\n"
-# $CMD
+CMD="npx karma start karma.conf.js --single-run"
+echo -e "$HOSTNAME\$ $CMD\n"
+$CMD
 
 # GREEN='\033[0;32m'
 # NC='\033[0m' # No Color
