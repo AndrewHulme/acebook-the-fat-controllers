@@ -35,7 +35,8 @@ before_script:
 script: 
 - rake
 - bundle exec rubocop
-- node_modules/karma/bin/karma start karma.conf.js --single-run
+# - node_modules/karma/bin/karma start karma.conf.js --single-run
 # - node_modules/.bin/eslint **/*.js
-- node -v
+# - node -v
+- npm test
 - npm run lint
