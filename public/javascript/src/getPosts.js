@@ -20,9 +20,21 @@ function getNext5(){
 	    div.setAttribute('class', 'posts');
 
     	for (i= 0; i < data.length; i++) {
+
+    		console.log(data[i]);
+
+    		let post = document.createElement('div')
+    		post.setAttribute('class', 'post');
     		let element = document.createElement('p');
 			element.innerHTML = data[i].message;
-			div.appendChild(element);
+			post.appendChild(element);
+			let dateHTML = document.createElement('small')
+			date = new Date(data[i].created_at);
+			date = date.toString().substring(0, 24);
+			dateHTML.innerHTML = date;
+			post.appendChild(dateHTML);
+			div.appendChild(post);
+
 	    }
 
 	    document.getElementById('postsContainer').appendChild(div);
