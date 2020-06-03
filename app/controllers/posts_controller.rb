@@ -9,8 +9,19 @@ class PostsController < ApplicationController
   end
 
   def index
-    @posts = Post.all
-    render :json => @posts
+
+    #return last 5 in database if no params id given
+
+    if params[:id] == nil
+      @posts = Post.last(5).reverse
+      render :json => @posts
+    else
+
+      # else return 5, params[:id] is the highest
+
+      @posts = Post.where(id: (params[:id].to_i - 6)..(params[:id].to_i - 1)).reverse
+      render :json => @posts
+    end
   end
 
   private
