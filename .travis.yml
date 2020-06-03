@@ -13,23 +13,24 @@ install:
 - bundle install
 - bundle exec rake db:create RAILS_ENV=test
 - rake db:migrate
+- nvm install 14.2
 
 before_script:
-- nvm install 14.2
-- npm install eslint
-- npm install @metahub/karma-jasmine-jquery
-- npm install babel-eslint
-- npm install eslint-plugin-jasmine
-- npm install jasmine
-- npm install jasmine-core
-- npm install jasmine-jquery
-- npm install karma
-- npm install karma-chrome-launcher
-- npm install karma-cli
-- npm install karma-jasmine
-- npm install karma-coverage
-- npm install karma-spec-reporter
-- npm install karma-jquery
+- npm install
+# - npm install eslint
+# - npm install @metahub/karma-jasmine-jquery
+# - npm install babel-eslint
+# - npm install eslint-plugin-jasmine
+# - npm install jasmine
+# - npm install jasmine-core
+# - npm install jasmine-jquery
+# - npm install karma
+# - npm install karma-chrome-launcher
+# - npm install karma-cli
+# - npm install karma-jasmine
+# - npm install karma-coverage
+# - npm install karma-spec-reporter
+# - npm install karma-jquery
 
 script: 
 - rake
