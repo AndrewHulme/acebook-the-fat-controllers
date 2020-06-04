@@ -6,7 +6,7 @@ RSpec.describe "users/new", type: :view do
       :email => "MyString",
       :username => "MyString",
       :name => "MyString",
-      :password => ""
+      :password => "MyString"
     ))
   end
 
