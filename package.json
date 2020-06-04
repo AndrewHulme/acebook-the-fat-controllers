@@ -1,7 +1,13 @@
 {
   "name": "acebook",
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "@rails/webpacker": "3.5",
+    "babel-preset-react": "^6.24.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
   "description": "REQUIRED INSTRUCTIONS:",
   "version": "1.0.0",
   "main": "index.html",
@@ -14,9 +20,9 @@
     "test": "karma start karma.conf.js --single-run"
   },
   "devDependencies": {
-    "eslint": "^7.0.0",
     "@metahub/karma-jasmine-jquery": "*",
     "babel-eslint": "^10.1.0",
+    "eslint": "^7.0.0",
     "eslint-plugin-jasmine": "*",
     "jasmine": "*",
     "jasmine-core": "*",
@@ -24,10 +30,11 @@
     "karma": "*",
     "karma-chrome-launcher": "*",
     "karma-cli": "*",
-    "karma-jasmine": "*",
     "karma-coverage": "*",
+    "karma-jasmine": "*",
+    "karma-jquery": "*",
     "karma-spec-reporter": "*",
-    "karma-jquery": "*"
+    "webpack-dev-server": "2.11.2"
   },
   "repository": {
     "type": "git",

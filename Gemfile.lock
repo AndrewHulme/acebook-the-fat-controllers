@@ -55,6 +55,7 @@ GEM
       xpath (>= 2.0, < 4.0)
     childprocess (3.0.0)
     concurrent-ruby (1.1.6)
+    connection_pool (2.2.3)
     crass (1.0.6)
     diff-lcs (1.3)
     docile (1.3.2)
@@ -116,6 +117,8 @@ GEM
       json
       websocket (~> 1.0)
     rack (2.2.2)
+    rack-proxy (0.6.5)
+      rack
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rails (5.1.7)
@@ -146,6 +149,12 @@ GEM
     rb-fsevent (0.10.4)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
+    react_on_rails (11.1.4)
+      addressable
+      connection_pool
+      execjs (~> 2.5)
+      rails (>= 3.2)
+      rainbow (~> 3.0)
     rspec-core (3.9.2)
       rspec-support (~> 3.9.3)
     rspec-expectations (3.9.2)
@@ -228,6 +237,10 @@ GEM
       activemodel (>= 5.0)
       bindex (>= 0.4.0)
       railties (>= 5.0)
+    webpacker (3.6.0)
+      activesupport (>= 4.2)
+      rack-proxy (>= 0.6.1)
+      railties (>= 4.2)
     websocket (1.2.8)
     websocket-driver (0.6.5)
       websocket-extensions (>= 0.1.0)
@@ -246,6 +259,7 @@ DEPENDENCIES
   pg
   puma (~> 3.7)
   rails (~> 5.1.1)
+  react_on_rails (= 11.1.4)
   rspec-rails (~> 3.5)
   rubocop (= 0.79.0)
   sass-rails (~> 5.0)
@@ -256,6 +270,7 @@ DEPENDENCIES
   tzinfo-data
   uglifier (>= 1.3.0)
   web-console (>= 3.3.0)
+  webpacker (~> 3)
 
 BUNDLED WITH
    1.17.3
