@@ -15,6 +15,7 @@ gem 'rails', '~> 5.1.1'
 
 gem "react_on_rails", "11.1.4" # Update to the current version
 # Use postgresql as the database for Active Record
+
 gem 'pg'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
@@ -55,3 +56,5 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'mini_racer', platforms: :ruby
