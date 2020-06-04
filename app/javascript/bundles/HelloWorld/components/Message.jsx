@@ -7,7 +7,7 @@ class Message extends React.Component {
     this.state = {
       error: null,
       isLoaded: false,
-      items: []
+      posts: []
     };
   }
 
@@ -18,7 +18,7 @@ class Message extends React.Component {
         (result) => {
           this.setState({
             isLoaded: true,
-            items: result
+            posts: result
           });
         },
         // Note: it's important to handle errors here
@@ -34,11 +34,13 @@ class Message extends React.Component {
   }
 
   render() {
-    const { error, isLoaded, items } = this.state;
-    console.log(items);
-      return (
-        <div>{items[0].message}</div>
-      );
+    const { error, isLoaded, posts } = this.state;
+      return (<div>
+    	{this.state.posts.map((post, index) => (
+        	<p key={index}>{post.message}</p>
+
+   		))}
+    </div>);
     
   }
 }
