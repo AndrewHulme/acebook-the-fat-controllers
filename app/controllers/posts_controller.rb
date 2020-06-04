@@ -9,6 +9,10 @@ class PostsController < ApplicationController
   end
 
   def index
+      @posts = Post.last(5).reverse
+  end
+
+  def json
 
     #return last 5 in database if no params id given
 

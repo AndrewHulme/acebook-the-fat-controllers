@@ -7,6 +7,7 @@
   <body>
     <h1>Acebook</h1>
     <%= react_component("HelloWorld", props: @hello_world_props, prerender: false) %>
+    <%= react_component("Message", props: {text: @blahblahblah}, prerender: false) %>
     <div id="postsContainer"></div>
     <button onclick="getNext5()">LOAD MORE POSTS</button>
     <script type="text/javascript" src="/javascript/src/getPosts.js"></script>
