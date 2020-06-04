@@ -1,5 +1,6 @@
 <% if current_user %>
   Logged in as <%= current_user.username %>.
+  Logged in as <%= current_user.id %>.
   <%= link_to 'Log Out', logout_path %>
   <%= link_to 'New post', new_post_path %>
 <% else %>
