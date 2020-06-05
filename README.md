@@ -53,3 +53,11 @@ This will load `localhost:3000` into the browser, then starts Rails. Refresh pag
 ## Trello
 
 https://trello.com/b/Trq2bnqd/acebook-rails-the-fat-controllers
+
+## Mock Ups
+
+![Homepage1](diagrams/Homepage1.JPG)
+![Homepage2](diagrams/Homepage2.JPG)
+![MyProfile](diagrams/MyProfile.JPG)
+![SignUp](diagrams/SignUp.JPG)
+![LogIn](diagrams/LogIn.JPG)
