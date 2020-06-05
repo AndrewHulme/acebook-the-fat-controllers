@@ -9,3 +9,10 @@
 /local/**
 !.eslintrc.js
 karma.conf.js
+
+# temp
+/public
+/config
+/app/javascript/packs
+/app/assets
+/app/javascript/bundles

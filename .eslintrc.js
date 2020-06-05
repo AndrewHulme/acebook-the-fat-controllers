@@ -2,6 +2,7 @@
 
 module.exports = {
   'plugins': ['jasmine'],
+  'plugins': ['react'],
   'env': {
     'browser': true,
     'jasmine': true,
@@ -10,6 +11,10 @@ module.exports = {
   },
   'extends': 'eslint:recommended',
   'extends': 'plugin:jasmine/recommended',
+  'extends': [
+    'eslint:recommended',
+    'plugin:react/recommended'
+  ],
   'globals': {
     'Atomics': 'readonly',
     'SharedArrayBuffer': 'readonly'
