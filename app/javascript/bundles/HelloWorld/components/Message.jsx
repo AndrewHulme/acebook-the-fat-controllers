@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types';
 
-class GetPosts extends React.Component {
+class Message extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -42,4 +42,4 @@ class GetPosts extends React.Component {
   }
 }
 
-export default GetPosts;
+export default Message;
