@@ -30,4 +30,8 @@
 .byebug_history
 
 # Local cache of Rubocop remote config
-.rubocop-*
+.rubocop-*/public/packs
+/public/packs-test
+/node_modules
+yarn-debug.log*
+.yarn-integrity

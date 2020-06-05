@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Acebook-The-Fat-Controllers</title>
+  </head>
+  <body>
+    <h1>Acebook</h1>
+    <%= react_component("Message", props: {text: @blahblahblah}, prerender: false) %>
+    <div id="postsContainer"></div>
+    <button onclick="getNext5()">LOAD MORE POSTS</button>
+  </body>
+</html>
